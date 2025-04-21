@@ -1,8 +1,11 @@
 body{
-  background-image: url('белый лебедь.webp'); 
+  /*background-image: url('белый лебедь.webp'); 
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed
+  background-attachment: fixed*/
+  color: white;
+  background-image: url('310506049_27e9691d-e326-425b-a06f-f7efc3dc8a2f.svg'); 
+  background-repeat: repeat;
   }
 #Кнопка, #Нажми, #выпей{
   margin:1rem 0.5rem;
@@ -16,9 +19,6 @@ button:hover{
 input{
   margin-top:0.7rem;
   margin-bottom:0.7rem;
-}
-.белый{
-  color:white;
 }
 select{
   margin-bottom:2.3rem;
