@@ -77,67 +77,8 @@
                 <br>
             <sub>(Нормальное атмосферное давление равняется 760 мм.рт.ст.)</sub><br>
             <button type="button" id="Кнопка">Расчёт</button><br>
-            <p class="белый" id="вывод" ></p> 
+            <p id="вывод" ></p> 
     </div>
-    <!--<p id="полка"><h3>Полная аэродинамическая сила: <button type="button" id="полная"></button></h3></p>
-    <div id ="полнаэрсил" class="расчёт1">
-        <label for="параметр1">Форма крыла:</label><br>
-            <input type="radio" name="выбор2" id="симметричный двояковыпуклый2"><label for="симметричный двояковыпуклый2"><img src="symmetrical.jpg" alt="симметричное двояковыпуклое крыло"></label><br>
-                <div id="симметрия" class="выпвыбор">
-                    <input type="radio" name="профкрыл2" id="1_2"><label for="1_2"><img src="картинка_а.jpg" alt="вогнутая эллиптическая"></label><br>
-                    <input type="radio" name="профкрыл2" id="2_2"><label for="2_2"><img src="картинка_г.jpg" alt="трапецевидная"></label><br>
-                    <input type="radio" name="профкрыл2" id="3_2"><label for="3_2"><img src="картинка_е.jpg" alt="эллиптическая"></label><br>
-                    <input type="radio" name="профкрыл2" id="4_2"><label for="4_2"><img src="картинка_д.jpg" alt="обратная стреловидность"></label><br>
-                    <input type="radio" name="профкрыл2" id="5_2"><label for="5_2"><img src="картинка_и.jpg" alt="прямая стреловидность"></label><br>
-                </div>
-            <input type="radio" name="выбор2" id="aсимметричный двояковыпуклый2"><label for="aсимметричный двояковыпуклый2"><img src="asymmetrical.jpg" alt="асимметричное двояковыпуклое крыло"></label><br>
-                <div id="асимметрия" class="выпвыбор">
-                    <input type="radio" name="профкрыл2" id="6_2"><label for="6_2"><img src="картинка_а.jpg" alt="вогнутая эллиптическая"></label><br>
-                    <input type="radio" name="профкрыл2" id="7_2"><label for="7_2"><img src="картинка_г.jpg" alt="трапецевидная"></label><br>
-                    <input type="radio" name="профкрыл2" id="8_2"><label for="8_2"><img src="картинка_е.jpg" alt="эллиптическая"></label><br>
-                    <input type="radio" name="профкрыл2" id="9_2"><label for="9_2"><img src="картинка_д.jpg" alt="обратная стреловидность"></label><br>
-                    <input type="radio" name="профкрыл2" id="10_2"><label for="10_2"><img src="картинка_и.jpg" alt="прямая стреловидность"></label><br>
-                </div>
-            <input type="radio" name="выбор2" id="плоское основание2"><label for="плоское основание2"><img src="flat.jpg" alt="плосковыпуклое крыло"></label><br>
-                <div id="плоский" class="выпвыбор">
-                    <input type="radio" name="профкрыл2" id="11_2"><label for="11_2"><img src="картинка_а.jpg" alt="вогнутая эллиптическая"></label><br>
-                    <input type="radio" name="профкрыл2" id="12_2"><label for="12_2"><img src="картинка_б.jpg" alt="прямоугольная"></label><br>
-                    <input type="radio" name="профкрыл2" id="13_2"><label for="13_2"><img src="картинка_е.jpg" alt="эллиптическая"></label><br>
-                    <input type="radio" name="профкрыл2" id="14_2"><label for="14_2"><img src="картинка_и.jpg" alt="прямая стреловидность"></label><br>
-                </div>
-            <input type="radio" name="выбор2" id="наклон вниз2"><label for="наклон вниз2"><img src="under.jpg" alt="крыло с наклоном вниз"></label><br>
-                <div id="наклвниз" class="выпвыбор">
-                    <input type="radio" name="профкрыл2" id="15_2"><label for="15_2"><img src="картинка_б.jpg" alt="прямоугольная"></label><br>
-                    <input type="radio" name="профкрыл2" id="16_2"><label for="16_2"><img src="картинка_е.jpg" alt="эллиптическая"></label><br>
-                </div>
-            <input type="radio" name="выбор2" id="волнообразный2"><label for="волнообразный2"><img src="curve.jpg" alt="S-образное крыло"><br>
-                <div id="волной" class="выпвыбор">
-                    <input type="radio" name="профкрыл2" id="17_2"><label for="17_2"><img src="картинка_з.jpg" alt="трапецевидная"></label><br>
-                    <input type="radio" name="профкрыл"2 id="18_2"><label for="18_2"><img src="картинка_б.jpg" alt="прямоугольная"></label><br>
-                </div>
-                <label for="угол">Угол наклона:</label>
-                <select name="уголнакл2" id="уголкрыла2">
-                    <option value="0" type="number" id="0_2">0&deg;</option>
-                    <option value="10" type="number" id="10_2">10&deg;</option>
-                    <option value="15" type="number" id="15_2">15&deg;</option>
-                </select><br>
-                <label for="параметр2_2">Скорость набегающего потока(V)</label>
-                <input type="number" id="параметр2_2">м/c<br>
-                <label for="параметр3">Характерная площадь(S)</label>
-                <input type="number" id="параметр3">м<sup>3</sup><br>
-                <label for="параметр4_2">Текущая температура</label>
-                <input type="number" id="параметр4">&deg;C<br>
-                <label for="параметр5_2">Текущее атмосферное давление</label>
-                <input type="number" id="параметр5">
-                <select id="purpose">
-                    <option type="text" id="мрс" value="мм.рт.ст.">мм.рт.ст.</option>
-                    <option type="text" id="пас" value="Па">Па</option>
-                </select>
-                <br>
-            <sub>(Нормальное атмосферное давление равняется 760 мм.рт.ст.)</sub><br>
-            <button type="button" id="Кнопка">Расчёт</button><br>
-            <p class="белый" id="вывод" ></p> 
-    </div>-->
     <p id="отнкрыл"><h3>Относительная максимальная толщина профиля: <button type="button" id="покотн"></button></h3></p>
     <div id="Толкрыл" class="убери">
         <label for="мактол">Максимальная толщина профиля(C<sub>max</sub>)</label>
@@ -247,7 +188,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <p class="белый"><h3><ul>
+                <p><h3><ul>
                     <li>Уменьшение относительной толщины профиля является эффективным способом снижения волнового сопротивления</li>
                     <li>У современных самолётов удлинение фюзеляжа достигает значений 6-15</li>
                     <li>Угол атаки для наиболее оптимального полёта примерно равен 25<sup> &deg; </sup></li>
@@ -255,7 +196,7 @@
             </div>
             <hr>
                 <a href="#top">Наверх страницы</a><br>
-                <p class="белый" id="формснос"><h3>Сноска по формулам: <button type="button" id="формулы"></button></h3> 
+                <p id="формснос"><h3>Сноска по формулам: <button type="button" id="формулы"></button></h3> 
                     <div id="сноска" class="сносить">
                         Y=C<sub>y</sub>*&rho;*V<sup>2</sup>*S*0.5 , где <br>
                         Y-подъёмная сила(Н)<br>
@@ -276,7 +217,7 @@
                     </div>
                 </p>
     <hr>
-    <p class="белый" id="чертежник"><h3>Чертежи: <button type="button" id = "чертила"></button></h3></p>
+    <p id="чертежник"><h3>Чертежи: <button type="button" id = "чертила"></button></h3></p>
     <div id = "групчерт" class = "надодлячерч">
         <img src="чертеж1.jpg" alt="ошибка: не удалось загрузить изображение" id = "чертежи"><br>
         <img src="чертеж2.jpg" alt="ошибка: не удалось загрузить изображение" id = "чертежи"><br>
@@ -285,7 +226,7 @@
         <img src="чертеж5.jpg" alt="ошибка: не удалось загрузить изображение" id = "чертежи"><br>
         <img src="чертеж6.jpg" alt="ошибка: не удалось загрузить изображение" id = "чертежи">
     </div>
-    <i><sub class="белый">На нашем сайте представлены только наиболее оптимальные, часто используемые и дозвуковые модели</sub></i>
+    <i><sub>На нашем сайте представлены только наиболее оптимальные, часто используемые и дозвуковые модели</sub></i>
     <script src="ass.js"></script>
 </body>
 </html>
