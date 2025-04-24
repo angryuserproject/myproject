@@ -67,7 +67,7 @@ const Кнопочка=document.getElementById("Кнопка");
         let c=document.getElementById("параметр2").value;
         let d=document.getElementById("параметр3").value;
         let itd = d * effzn
-        document.getElementById("вывод").innerHTML = perem*rho*c*c*itd*0.5 + " Ньютонов";
+        document.getElementById("вывод").innerHTML = perem*rho*c*c*d*0.5 + " Ньютонов";
 
     }
     else if (perem=='on'){
